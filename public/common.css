@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+/* ナビゲーションのグラスモーフィズム */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* フローティングカード（各セクション用） */
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 20px rgba(255, 255, 255, 0.5) inset;
+}
+
+/* スクロールアニメーション（Reveal） */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Heroセクション用アニメーション */
+.fade-in-up {
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.3s;
+}
+
+.delay-300 {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 背景画像固定レイヤーとアニメーション */
+.fixed-background {
+    position: fixed;
+    top: -50%;
+    /* アニメーションのための余白 */
+    left: -50%;
+    width: 200vw;
+    /* 画面より大きくして動かす */
+    height: 200vh;
+    z-index: -1;
+    /* グラデーションの上に配置してロゴをしっかり見せる */
+    /* ロゴ画像を背景に設定 */
+    background-image: url('img/Acterware_logo2.png');
+    background-size: 360px;
+    /* ロゴのサイズを2倍の360pxに拡大 */
+    background-repeat: repeat;
+    /* 繰り返し表示 */
+    /* アニメーションの追加 */
+    animation: moveBackground 80s linear infinite;
+    /* 上品にゆっくり動かす */
+    opacity: 0.08;
+    /* 【修正】不透明度を0.08（8%）に戻し、主張しすぎず背景に美しく溶け込むように変更 */
+
+    /* CSSフィルターでロゴのカラーを完全にリセットして単色のグレーに変換 */
+    filter: brightness(0) invert(60%);
+}
+
+@keyframes moveBackground {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(10%, 10%) rotate(3deg);
+        /* スムーズで緩やかな移動と回転 */
+    }
+}
+
+/* ブランドカラーの美しいグラデーションオーバーレイ */
+.fixed-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    /* 背景画像の下に配置してロゴを遮らないようにする */
+    /* アクターウェアのブランドカラー（ネイビー、ブルー、グリーン）を反映した美しい半透明グラデーション */
+    background: linear-gradient(135deg, rgba(26, 54, 104, 0.92), rgba(22, 115, 165, 0.85), rgba(114, 196, 75, 0.75));
+}
+
+/* フッター専用の縦方向ダークグラデーション */
+.footer-gradient {
+    background: linear-gradient(to bottom, #1A3668, #0B1426);
+}

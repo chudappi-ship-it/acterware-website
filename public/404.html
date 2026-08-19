@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script src="/google-tag.js" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アクターウェア | 404 Not Found</title>
+    <meta name="description" content="お探しのページが見つかりませんでした。URLが変更されているか、ページが存在しない可能性があります。">
+    <!-- CDN Preconnect / DNS Prefetch for Core Web Vitals Optimization -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/Acterware_logo2.png" type="image/png">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/tailwind.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 共通カスタムスタイル -->
+    <link rel="stylesheet" href="/common.css">
+
+    <style>
+        /* 404数字のグラデーションアニメーション */
+        .error-code {
+            background: linear-gradient(135deg, #1a56db 0%, #00b097 50%, #1a56db 100%);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 4s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* 浮遊アニメーション */
+        .float-anim {
+            animation: floating 6s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* パーティクル装飾 */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.15;
+            animation: particleMove 8s ease-in-out infinite;
+        }
+
+        .particle:nth-child(1) {
+            width: 400px;
+            height: 400px;
+            top: -100px;
+            right: -100px;
+            background: #1a56db;
+            animation-delay: 0s;
+        }
+
+        .particle:nth-child(2) {
+            width: 250px;
+            height: 250px;
+            bottom: 50px;
+            left: -80px;
+            background: #00b097;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(3) {
+            width: 150px;
+            height: 150px;
+            top: 40%;
+            right: 15%;
+            background: #1a56db;
+            animation-delay: 4s;
+        }
+
+        @keyframes particleMove {
+
+            0%,
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+
+            50% {
+                transform: scale(1.1) rotate(15deg);
+            }
+        }
+
+        /* カウントダウン表示用 */
+        #countdown-num {
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        /* ボタンホバー */
+        .btn-home {
+            background: linear-gradient(135deg, #1a56db, #00b097);
+            transition: all 0.3s;
+        }
+
+        .btn-home:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(26, 86, 219, 0.35);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-acter-dark antialiased selection:bg-acter-green selection:text-white relative">
+
+    <!-- 共通の固定背景とオーバーレイ -->
+    <div class="fixed-background"></div>
+    <div class="fixed-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 shadow-md py-0" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/index.html" class="flex items-center">
+                        <img class="h-12 w-auto" src="/img/Acterware_logo_tran.png" alt="Acterware Logo">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="/index.html#about"
+                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">私たちについて</a>
+                    <a href="/index.html#why-us"
+                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">選ばれる理由</a>
+                    <a href="/index.html#services"
+                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">サービス</a>
+                    <a href="/index.html#works"
+                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">実績</a>
+                    <a href="/index.html#contact"
+                        class="bg-gradient-brand text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        無料相談はこちら
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-acter-navy focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-1 text-center">
+                <a href="/index.html#about"
+                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">私たちについて</a>
+                <a href="/index.html#why-us"
+                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">選ばれる理由</a>
+                <a href="/index.html#services"
+                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">サービス</a>
+                <a href="/index.html#works"
+                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">実績</a>
+                <a href="/index.html#contact"
+                    class="block mt-4 mx-4 bg-gradient-brand text-white px-6 py-3 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    無料相談はこちら
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Error Section -->
+        <section class="relative min-h-screen flex items-center justify-center z-10 pt-20 overflow-hidden">
+
+            <!-- 背景パーティクル -->
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+
+            <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+
+                <!-- 浮遊アイコンと404数字 -->
+                <div class="float-anim mb-6">
+                    <div class="relative inline-block">
+                        <!-- 背景の光彩 -->
+                        <div class="absolute inset-0 rounded-full bg-acter-blue/10 blur-3xl scale-150"></div>
+                        <!-- 404 テキスト -->
+                        <p
+                            class="error-code text-[10rem] sm:text-[14rem] font-black leading-none tracking-tighter select-none">
+                            404</p>
+                    </div>
+                </div>
+
+                <!-- エラーバッジ -->
+                <div
+                    class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md border border-red-100 text-red-500 text-sm font-bold px-5 py-2 rounded-full shadow-sm mb-6">
+                    <i class="fas fa-circle-exclamation"></i>
+                    PAGE NOT FOUND
+                </div>
+
+                <!-- メインメッセージ -->
+                <h1 class="text-2xl sm:text-3xl font-bold text-white mb-4 leading-snug drop-shadow-md">
+                    お探しのページが見つかりませんでした
+                </h1>
+                <p class="text-blue-100 text-base leading-relaxed mb-10 max-w-md mx-auto">
+                    URLが変更・移動・削除されたか、入力ミスの可能性があります。
+                    以下のリンクからトップページへお戻りください。
+                </p>
+
+                <!-- ボタン群 -->
+                <div class="flex flex-col sm:flex-row gap-4 items-center justify-center mb-12">
+                    <a href="/index.html"
+                        class="btn-home text-white px-8 py-3.5 rounded-full font-bold shadow-lg inline-flex items-center gap-2 text-base">
+                        <i class="fas fa-home"></i>
+                        トップページへ戻る
+                    </a>
+                    <a href="/index.html#contact"
+                        class="bg-white/80 backdrop-blur-md border border-gray-200 text-acter-navy px-8 py-3.5 rounded-full font-bold shadow-sm hover:shadow-md hover:bg-white hover:-translate-y-1 transition-all duration-300 inline-flex items-center gap-2 text-base">
+                        <i class="fas fa-envelope"></i>
+                        お問い合わせ
+                    </a>
+                </div>
+
+                <!-- 自動リダイレクト通知 -->
+                <p class="text-xs text-blue-200 mt-8">
+                    <span id="countdown-num">10</span> 秒後に自動でトップページへ移動します
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-gradient text-gray-100 py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="bg-white p-3 rounded-xl inline-block mb-6 shadow-sm">
+                        <img src="/img/Acterware_logo_tran.png" alt="Acterware Logo" class="h-10">
+                    </div>
+                    <p class="text-sm text-gray-200 mb-4 max-w-sm leading-relaxed">
+                        共に歩む、事業のサポーター。<br>
+                        未来の事業に必要な『すべて』を、今、この手で。<br>
+                        私たちはクライアントの成長を第一に考え、最適なITソリューションを提供します。
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="https://x.com/Acterware" target="_blank" title="X (Twitter)"
+                            class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/40 hover:text-white hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                            </svg>
+                        </a>
+                        <a href="https://chudappi.hatenablog.com/" target="_blank" title="おじのAIやってみたBlog"
+                            class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/40 hover:text-white hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+                            <i class="fas fa-pen-nib text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Links</h4>
+                    <ul class="space-y-3 text-sm text-gray-200">
+                        <li><a href="/company.html" target="_blank"
+                                class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">会社概要</a>
+                        </li>
+                        <li><a href="/project.html" target="_blank"
+                                class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">プロジェクトギャラリー</a>
+                        </li>
+                        <li><a href="/privacypolicy.html" target="_blank"
+                                class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">プライバシーポリシー</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Profile</h4>
+                    <ul class="space-y-3 text-sm text-gray-200">
+                        <li><a href="/portfolio.html" target="_blank"
+                                class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Portfolio</a>
+                        </li>
+                        <li><a href="/work.html" target="_blank"
+                                class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">職務経歴</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-300">
+                <p>&copy; 2026 Acterware Inc. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for Acterware</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/main.js"></script>
+    <script>
+        // 10秒カウントダウン後にトップページへ自動リダイレクト
+        (function () {
+            let count = 10;
+            const el = document.getElementById('countdown-num');
+            const timer = setInterval(function () {
+                count--;
+                if (el) el.textContent = count;
+                if (count <= 0) {
+                    clearInterval(timer);
+                    window.location.href = '/index.html';
+                }
+            }, 1000);
+        })();
+    </script>
+</body>
+
+</html>

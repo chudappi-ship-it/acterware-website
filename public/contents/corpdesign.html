@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acterware Inc. | アクターウェア</title>
+    <meta name="description" content="アクターウェア社はクライアント企業様に寄り添い、事業全般をサポートいたします。未来の事業に必要な『すべて』を、今、この手で。">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/tailwind.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts: Noto Sans JP & Montserrat (for English headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        .font-en {
+            font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+        }
+
+        /* ロゴの色合いに合わせたグラデーション設定 */
+        .bg-brand-gradient {
+            background: linear-gradient(135deg, #0f2a5c 0%, #205284 60%, #8cc63f 100%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #0f2a5c 0%, #2a9d8f 50%, #8cc63f 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* メインビジュアル：より先進的なイメージに */
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('20251129154644.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800 antialiased scroll-smooth">
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="https://www.acterware.com/" class="flex items-center group">
+                        <!-- 【重要】ここに実際のロゴ画像パスを設定してください -->
+                        <!-- 現在はデザイン確認用にダミー画像を表示しています -->
+                        <img src="/img/Acterware_logo_tran.png" alt="Acterware Inc." class="h-16 w-auto">
+
+                        <!-- ロゴ画像がない場合のテキストフォールバック（ロゴのグラデーションを模倣） -->
+                        <!--
+                        <div class="flex items-center gap-2">
+                             <i class="fas fa-paper-plane text-transparent bg-clip-text bg-gradient-to-tr from-brand-dark to-brand-accent text-2xl transform -rotate-12"></i>
+                             <div class="flex flex-col">
+                                 <span class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-dark via-brand-DEFAULT to-brand-accent tracking-tighter leading-none">Acterware</span>
+                                 <span class="text-xs text-gray-500 tracking-widest uppercase">Inc.</span>
+                            </div>
+                        </div>
+                        -->
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="javascript:void(0)"
+                        class="text-gray-600 hover:text-brand-dark font-medium transition relative group py-2">
+                        Home
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="text-gray-600 hover:text-brand-dark font-medium transition relative group py-2">
+                        Policy
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="text-gray-600 hover:text-brand-dark font-medium transition relative group py-2">
+                        Service
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="text-gray-600 hover:text-brand-dark font-medium transition relative group py-2">
+                        Company
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="text-gray-600 hover:text-brand-dark font-medium transition relative group py-2">
+                        News
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="text-gray-600 hover:text-brand-dark font-medium transition relative group py-2">
+                        Blog
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="text-gray-600 hover:text-brand-dark font-medium transition relative group py-2">
+                        Profile
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="bg-gradient-to-r from-brand-dark to-brand-teal text-white px-6 py-2 rounded-full hover:to-brand-accent transition-all duration-300 shadow-md transform hover:-translate-y-0.5 flex items-center gap-2">
+                        Contact <i class="fas fa-chevron-right text-xs"></i>
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-dark focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-lg">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="javascript:void(0)"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-dark hover:bg-brand-light border-l-4 border-transparent hover:border-brand-accent transition-all">Home</a>
+                <a href="javascript:void(0)"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-dark hover:bg-brand-light border-l-4 border-transparent hover:border-brand-accent transition-all">Policy</a>
+                <a href="javascript:void(0)"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-dark hover:bg-brand-light border-l-4 border-transparent hover:border-brand-accent transition-all">Service</a>
+                <a href="javascript:void(0)"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-dark hover:bg-brand-light border-l-4 border-transparent hover:border-brand-accent transition-all">Company</a>
+                <a href="javascript:void(0)"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-dark hover:bg-brand-light border-l-4 border-transparent hover:border-brand-accent transition-all">News</a>
+                <a href="javascript:void(0)"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-dark hover:bg-brand-light border-l-4 border-transparent hover:border-brand-accent transition-all">Blog</a>
+                <a href="javascript:void(0)"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-dark hover:bg-brand-light border-l-4 border-transparent hover:border-brand-accent transition-all">Profile</a>
+                <a href="javascript:void(0)"
+                    class="block mt-4 text-center px-3 py-3 rounded-full text-base font-bold text-white bg-gradient-to-r from-brand-dark to-brand-teal shadow-md">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center hero-bg text-white overflow-hidden">
+        <!-- アクセントカラーの装飾 -->
+        <div
+            class="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-brand-accent/10 to-transparent pointer-events-none">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <div
+                class="mb-8 inline-flex items-center gap-2 px-5 py-2 border border-brand-teal/50 rounded-full bg-brand-dark/50 backdrop-blur-md text-brand-accent text-sm tracking-wider font-semibold animate-fade-in-up shadow-[0_0_15px_rgba(140,198,63,0.3)]">
+                <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+                IT Solution & Project Management
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 leading-tight drop-shadow-xl">
+                共に歩む、<br class="md:hidden">事業のサポーター
+            </h1>
+            <p
+                class="text-xl md:text-2xl mb-12 text-gray-200 font-light max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+                未来の事業に必要な『すべて』を、<br class="sm:hidden">今、この手で。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="javascript:void(0)"
+                    class="px-8 py-4 border-2 border-white/30 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white hover:text-brand-dark hover:border-white transition duration-300 font-bold tracking-wide">
+                    事業内容を見る
+                </a>
+                <a href="javascript:void(0)"
+                    class="px-8 py-4 bg-gradient-to-r from-brand-accent to-green-500 text-white rounded-full hover:shadow-[0_0_20px_rgba(140,198,63,0.5)] hover:scale-105 transition duration-300 font-bold shadow-lg tracking-wide border border-transparent">
+                    お問い合わせ
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div
+            class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-80 animate-bounce">
+            <span class="text-xs uppercase tracking-widest mb-2 text-brand-accent font-semibold">Scroll</span>
+            <a href="#about" class="text-white hover:text-brand-accent transition">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Service Policy Section -->
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+        <!-- 背景装飾: ロゴのような斜めのライン -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-0 pointer-events-none opacity-5">
+            <div class="absolute -top-20 -left-20 w-96 h-96 bg-brand-dark rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 right-0 w-80 h-80 bg-brand-accent rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-brand-teal font-bold tracking-wider uppercase text-sm">About Us</span>
+                <h2 class="text-4xl font-bold text-brand-dark mt-2 mb-4">Service Policy</h2>
+                <p class="text-gray-500">サービスポリシー</p>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-brand-dark to-brand-accent mx-auto mt-6 rounded-full">
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative group">
+                    <!-- 画像フレームの装飾 -->
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-br from-brand-dark to-brand-accent rounded-3xl transform rotate-2 opacity-20 transition-transform duration-500 group-hover:rotate-4">
+                    </div>
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                        <img src="20251129161057.jpg" alt="Business consultation and teamwork"
+                            class="w-full object-cover h-[500px] transform transition duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-8 left-8 text-white">
+                            <div class="w-12 h-1 bg-brand-accent mb-4"></div>
+                            <p class="font-bold text-2xl mb-1">Partnership</p>
+                            <p class="text-sm opacity-90 font-light">クライアントと共に創る未来</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2 space-y-8">
+                    <h3 class="text-3xl font-bold text-gray-900 leading-tight">
+                        クライアント企業様に寄り添い、<br>
+                        <span class="text-brand-teal">事業全般をサポート</span>いたします。
+                    </h3>
+                    <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                        <p>
+                            企業様は未来の事業の創造に注力していただき、今の事業は私たちが支えます。
+                            未来の事業に必要な『すべて』を、今、手に入れましょう。
+                        </p>
+
+                        <div class="grid gap-6 mt-8">
+                            <div
+                                class="flex p-6 bg-white rounded-xl shadow-lg border-l-4 border-brand-dark hover:border-brand-accent transition-colors duration-300 group">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-12 h-12 bg-blue-50 text-brand-dark rounded-full flex items-center justify-center group-hover:bg-brand-dark group-hover:text-brand-accent transition-colors duration-300">
+                                        <i class="fas fa-cube text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <h4 class="text-lg font-bold text-brand-dark mb-2">創造（Creation）</h4>
+                                    <p class="text-sm text-gray-600">ITを駆使して、事業の『もの』を創造します。</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex p-6 bg-white rounded-xl shadow-lg border-l-4 border-brand-teal hover:border-brand-accent transition-colors duration-300 group">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-12 h-12 bg-teal-50 text-brand-teal rounded-full flex items-center justify-center group-hover:bg-brand-teal group-hover:text-white transition-colors duration-300">
+                                        <i class="fas fa-rocket text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <h4 class="text-lg font-bold text-brand-dark mb-2">効率化（Efficiency）</h4>
+                                    <p class="text-sm text-gray-600">ITを駆使して、事業の『こと』を効率化します。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <span class="text-brand-teal font-bold tracking-wider uppercase text-sm">What We Do</span>
+                <h2 class="text-4xl font-bold text-brand-dark mt-2 mb-4">Our Services</h2>
+                <p class="text-gray-500">事業内容</p>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-brand-dark to-brand-accent mx-auto mt-6 rounded-full">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Item 1 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-dark to-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                    </div>
+                    <!-- 修正: group-hover時の背景色指定をTailwindのユーティリティクラスに変更 -->
+                    <div
+                        class="w-16 h-16 bg-brand-light rounded-2xl flex items-center justify-center text-brand-dark mb-8 group-hover:bg-gradient-to-br group-hover:from-brand-dark group-hover:to-brand-accent group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fas fa-globe text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4 group-hover:text-brand-teal transition-colors">
+                        サイト構築・運営コンサル</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        ECを中心とするサイト構築および運営に関するコンサルティングを行います。収益最大化に向けた戦略をご提案します。</p>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-dark to-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                    </div>
+                    <!-- 修正 -->
+                    <div
+                        class="w-16 h-16 bg-brand-light rounded-2xl flex items-center justify-center text-brand-dark mb-8 group-hover:bg-gradient-to-br group-hover:from-brand-dark group-hover:to-brand-accent group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fas fa-tasks text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4 group-hover:text-brand-teal transition-colors">
+                        プロジェクトマネジメント</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">PMO業務をはじめ、プロジェクトの円滑な進行をサポートします。進捗管理から課題解決まで伴走します。
+                    </p>
+                </div>
+
+                <!-- Service Item 3 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-dark to-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                    </div>
+                    <!-- 修正 -->
+                    <div
+                        class="w-16 h-16 bg-brand-light rounded-2xl flex items-center justify-center text-brand-dark mb-8 group-hover:bg-gradient-to-br group-hover:from-brand-dark group-hover:to-brand-accent group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fas fa-file-powerpoint text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4 group-hover:text-brand-teal transition-colors">
+                        各種資料作成</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        提案書やプレゼンテーション資料など、ビジネスに必要な各種資料を作成し、効果的なコミュニケーションを支援します。</p>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-dark to-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                    </div>
+                    <!-- 修正 -->
+                    <div
+                        class="w-16 h-16 bg-brand-light rounded-2xl flex items-center justify-center text-brand-dark mb-8 group-hover:bg-gradient-to-br group-hover:from-brand-dark group-hover:to-brand-accent group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fas fa-laptop-code text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4 group-hover:text-brand-teal transition-colors">
+                        ホームページ制作・デザイン</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        コーポレートサイトやランディングページのデザイン・制作を行います。UI/UXを考慮した設計を提供します。</p>
+                </div>
+
+                <!-- Service Item 5 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-dark to-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                    </div>
+                    <!-- 修正 -->
+                    <div
+                        class="w-16 h-16 bg-brand-light rounded-2xl flex items-center justify-center text-brand-dark mb-8 group-hover:bg-gradient-to-br group-hover:from-brand-dark group-hover:to-brand-accent group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fas fa-pen-nib text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4 group-hover:text-brand-teal transition-colors">
+                        キャッチコピー・ロゴ創作</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        ブランドイメージを高めるロゴや、心に響くキャッチコピーを制作します。企業のアイデンティティを形にします。</p>
+                </div>
+
+                <!-- Service Item 6 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-dark to-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                    </div>
+                    <!-- 修正 -->
+                    <div
+                        class="w-16 h-16 bg-brand-light rounded-2xl flex items-center justify-center text-brand-dark mb-8 group-hover:bg-gradient-to-br group-hover:from-brand-dark group-hover:to-brand-accent group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fas fa-chart-line text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4 group-hover:text-brand-teal transition-colors">
+                        データ収集・分析 / 事務</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">データ収集・分析業務に加え、経理・会計等の事務業務もサポート。バックオフィス業務の効率化に貢献します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-24 bg-white relative">
+        <div
+            class="absolute right-0 bottom-0 w-64 h-64 bg-brand-light rounded-full mix-blend-multiply filter blur-3xl opacity-50">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-brand-teal font-bold tracking-wider uppercase text-sm">Information</span>
+                <h2 class="text-4xl font-bold text-brand-dark mt-2 mb-4">News</h2>
+                <p class="text-gray-500">お知らせ</p>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-brand-dark to-brand-accent mx-auto mt-6 rounded-full">
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <!-- News Item -->
+                <article class="flex flex-col md:flex-row md:items-center p-6 border-b border-gray-100">
+                    <div class="md:w-32 text-gray-400 text-sm mb-2 md:mb-0 font-mono font-bold">2025.11.29</div>
+                    <div class="md:w-28 mb-2 md:mb-0">
+                        <span
+                            class="px-3 py-1 text-xs font-bold bg-brand-dark text-white rounded-md uppercase tracking-wide shadow-sm">News</span>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-800 font-medium text-lg">コーポレートサイトをリニューアルいたしました。</p>
+                    </div>
+                </article>
+                <!-- News Item -->
+                <article class="flex flex-col md:flex-row md:items-center p-6 border-b border-gray-100">
+                    <div class="md:w-32 text-gray-400 text-sm mb-2 md:mb-0 font-mono font-bold">2025.11.01</div>
+                    <div class="md:w-28 mb-2 md:mb-0">
+                        <span
+                            class="px-3 py-1 text-xs font-bold bg-brand-dark text-white rounded-md uppercase tracking-wide shadow-sm">News</span>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-800 font-medium text-lg">ブログを始めました → <a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">おじのAIやってみたBlog</a>
+                        </p>
+                    </div>
+                </article>
+                <!-- News Item -->
+                <article class="flex flex-col md:flex-row md:items-center p-6 border-b border-gray-100">
+                    <div class="md:w-32 text-gray-400 text-sm mb-2 md:mb-0 font-mono font-bold">2025.10.01</div>
+                    <div class="md:w-28 mb-2 md:mb-0">
+                        <span
+                            class="px-3 py-1 text-xs font-bold bg-gray-600 text-white rounded-md uppercase tracking-wide shadow-sm">Press</span>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-800 font-medium text-lg">コーポレートサイトをオープンいたしました</p>
+                    </div>
+                </article>
+                <!-- News Item -->
+                <article class="flex flex-col md:flex-row md:items-center p-6 border-b border-gray-100 md:border-0">
+                    <div class="md:w-32 text-gray-400 text-sm mb-2 md:mb-0 font-mono font-bold">2025.10.01</div>
+                    <div class="md:w-28 mb-2 md:mb-0">
+                        <span
+                            class="px-3 py-1 text-xs font-bold bg-brand-teal text-white rounded-md uppercase tracking-wide shadow-sm">Info</span>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-800 font-medium text-lg">アクターウェア社起業</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Section -->
+    <section id="company" class="py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-teal font-bold tracking-wider uppercase text-sm">Corporate Profile</span>
+                <h2 class="text-3xl font-bold text-brand-dark mt-2 mb-4">Company</h2>
+                <p class="text-gray-500">会社概要</p>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-brand-dark to-brand-accent mx-auto mt-6 rounded-full">
+                </div>
+            </div>
+
+            <div class="bg-white shadow-xl rounded-2xl overflow-hidden border border-gray-100">
+                <div class="md:flex">
+                    <!-- Company Info Side Panel: グラデーション適用 -->
+                    <div
+                        class="md:w-1/3 bg-brand-gradient text-white p-8 md:p-12 flex flex-col justify-center relative overflow-hidden">
+                        <div class="relative z-10">
+                            <div class="text-3xl font-bold mb-2 tracking-tighter">Acterware Inc.</div>
+
+                            <p class="opacity-90 leading-relaxed mb-6 text-sm font-medium">
+                                私たちはITの力でビジネスを加速させ、企業の成長を支援するプロフェッショナル集団です。
+                            </p>
+                            <div class="w-12 h-1 bg-brand-accent rounded-full"></div>
+                        </div>
+                        <!-- Decorative circles -->
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+                        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/20 to-transparent">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <table class="w-full text-left border-collapse">
+                            <tbody class="divide-y divide-gray-100">
+                                <tr class="hover:bg-gray-50 transition group">
+                                    <th class="py-6 px-8 font-bold text-brand-dark w-1/3 sm:w-1/4 bg-gray-50/50">会社名
+                                    </th>
+                                    <td class="py-6 px-8 text-gray-600 font-medium">Acterware Inc. （アクターウェア社）※実在しません
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition">
+                                    <th class="py-6 px-8 font-bold text-brand-dark bg-gray-50/50">所在地</th>
+                                    <td class="py-6 px-8 text-gray-600">〒107-0001<br>東京都千代田区赤坂10丁目10番10号</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition">
+                                    <th class="py-6 px-8 font-bold text-brand-dark bg-gray-50/50">設立</th>
+                                    <td class="py-6 px-8 text-gray-600">2025年10月</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition">
+                                    <th class="py-6 px-8 font-bold text-brand-dark bg-gray-50/50">代表者</th>
+                                    <td class="py-6 px-8 text-gray-600">代表取締役 津田 剛</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition">
+                                    <th class="py-6 px-8 font-bold text-brand-dark bg-gray-50/50 align-top">事業内容</th>
+                                    <td class="py-6 px-8 text-gray-600 leading-relaxed">
+                                        <ul class="list-disc list-inside space-y-1 marker:text-brand-accent">
+                                            <li>ECを中心とするサイト構築・運営コンサル</li>
+                                            <li>プロジェクトマネジメント・PMO業務</li>
+                                            <li>ホームページ制作・デザイン</li>
+                                            <li>各種ビジネスサポート</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-brand-dark text-white relative overflow-hidden">
+        <!-- Background decoration: ロゴのカラーパレットを反映 -->
+        <div class="absolute top-0 left-0 w-full h-full bg-brand-gradient opacity-90 z-0"></div>
+        <div
+            class="absolute top-0 left-0 w-96 h-96 bg-brand-accent opacity-20 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3 mix-blend-screen">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-brand-teal opacity-30 rounded-full blur-3xl translate-x-1/4 translate-y-1/4 mix-blend-screen">
+        </div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-brand-accent font-bold tracking-wider uppercase text-sm">Contact Us</span>
+                <h2 class="text-4xl font-bold mb-6 mt-2">Start Project With Us</h2>
+                <p class="text-blue-100 text-lg max-w-2xl mx-auto leading-relaxed">
+                    事業に関するご相談、お見積もりのご依頼など、お気軽にお問い合わせください。<br>
+                    担当者より2営業日以内にご連絡いたします。
+                </p>
+            </div>
+
+            <form
+                class="space-y-6 bg-white/10 backdrop-blur-md p-8 md:p-10 rounded-2xl shadow-2xl border border-white/10">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <label for="name" class="block text-sm font-bold text-blue-100 mb-2">お名前 <span
+                                class="text-brand-accent">*</span></label>
+                        <input type="text" id="name"
+                            class="w-full px-4 py-4 rounded-lg bg-white/90 border-2 border-transparent text-brand-dark placeholder-gray-500 focus:bg-white focus:border-brand-accent focus:outline-none transition shadow-inner"
+                            placeholder="例：山田 太郎">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-bold text-blue-100 mb-2">メールアドレス <span
+                                class="text-brand-accent">*</span></label>
+                        <input type="email" id="email"
+                            class="w-full px-4 py-4 rounded-lg bg-white/90 border-2 border-transparent text-brand-dark placeholder-gray-500 focus:bg-white focus:border-brand-accent focus:outline-none transition shadow-inner"
+                            placeholder="例：info@example.com">
+                    </div>
+                </div>
+                <div>
+                    <label for="subject" class="block text-sm font-bold text-blue-100 mb-2">件名</label>
+                    <div class="relative">
+                        <select id="subject"
+                            class="w-full px-4 py-4 rounded-lg bg-white/90 border-2 border-transparent text-brand-dark appearance-none focus:bg-white focus:border-brand-accent focus:outline-none transition cursor-pointer shadow-inner">
+                            <option>事業に関するお問い合わせ</option>
+                            <option>採用に関するお問い合わせ</option>
+                            <option>その他のお問い合わせ</option>
+                        </select>
+                        <div
+                            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-brand-dark">
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-bold text-blue-100 mb-2">お問い合わせ内容 <span
+                            class="text-brand-accent">*</span></label>
+                    <textarea id="message" rows="5"
+                        class="w-full px-4 py-4 rounded-lg bg-white/90 border-2 border-transparent text-brand-dark placeholder-gray-500 focus:bg-white focus:border-brand-accent focus:outline-none transition shadow-inner"
+                        placeholder="ご自由にご記入ください"></textarea>
+                </div>
+                <div class="text-center pt-4">
+                    <!-- onclickイベントをsendMail()に変更 -->
+                    <button type="button" onclick="sendMail()"
+                        class="w-full sm:w-auto px-12 py-4 bg-gradient-to-r from-brand-accent to-green-500 text-white font-bold rounded-full hover:shadow-[0_0_20px_rgba(140,198,63,0.6)] transition transform hover:-translate-y-1 shadow-lg tracking-widest">
+                        送信する <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-gray-300 pt-16 pb-8 border-t border-brand-teal/30 relative overflow-hidden">
+        <!-- Footer Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-dark to-black opacity-80 z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Col -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="mb-6">
+                        <!-- ロゴ部分：シンプルな文字のみ、ホバー効果削除 -->
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-bold text-white tracking-tighter leading-none">Acterware
+                                Inc.</span>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed text-gray-400 max-w-md mb-6 border-l-2 border-brand-teal pl-4">
+                        共に歩む、事業のサポーター。<br>
+                        未来の事業に必要な『すべて』を、今、この手で。<br>
+                        私たちはクライアントの成長を第一に考え、最適なITソリューションを提供します。
+                    </p>
+                    <!--
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-brand-accent hover:text-brand-dark transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-brand-accent hover:text-brand-dark transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-brand-accent hover:text-brand-dark transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    -->
+                </div>
+
+                <!-- Links Col -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 border-b border-brand-teal pb-2 inline-block">Menu</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">ホーム</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">サービスポリシー</a>
+                        </li>
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">事業内容</a>
+                        </li>
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">会社概要</a>
+                        </li>
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">ニュース</a>
+                        </li>
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Other Col -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 border-b border-brand-teal pb-2 inline-block">Profile</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">Portfolio</a>
+                        </li>
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">職務経歴</a>
+                        </li>
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">プロジェクトギャラリー</a>
+                        </li>
+                        <li><a href="javascript:void(0)"
+                                class="hover:text-brand-accent hover:translate-x-1 inline-block transition">おじのAIやってみたBlog</a>
+                        </li>
+                        <!--
+                        <li class="pt-4"><a href="javascript:void(0)" class="text-xs hover:text-brand-accent transition text-gray-500">プライバシーポリシー</a></li>
+                        <li><a href="javascript:void(0)" class="text-xs hover:text-brand-accent transition text-gray-500">サイトマップ</a></li>
+                        -->
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2025 Acterware Inc. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for Acterware Renewal Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const header = document.getElementById('header');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+                header.classList.add('bg-white/95');
+                header.classList.remove('bg-white/90');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.remove('bg-white/95');
+                header.classList.add('bg-white/90');
+            }
+        });
+
+        // Mailto Script
+        function sendMail() {
+            // フォームの値を取得
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // 必須チェック
+            if (!name || !email || !message) {
+                alert('お名前、メールアドレス、お問い合わせ内容は必須入力です。');
+                return;
+            }
+
+            // 送信先アドレス（※ここを実際の送信先に変更してください）
+            const recipient = "info@acterware.com";
+
+            // 本文の作成
+            const body = `お名前: ${name}\nメールアドレス: ${email}\n\nお問い合わせ内容:\n${message}`;
+
+            // mailtoリンクの生成と実行
+            // encodeURIComponentを使って日本語などが文字化けしないようにURLエンコードします
+            const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // メーラー起動
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+
+</html>
