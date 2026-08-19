@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "acterware-website",
-  "compatibility_date": "2026-08-20",
+  "compatibility_date": "2026-08-19",
   "main": "./worker/index.ts",
   "assets": {
     "directory": "./dist/client",
