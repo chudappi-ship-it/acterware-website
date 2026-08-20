@@ -7,6 +7,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <title>アクターウェア | プライバシーポリシー</title>
     <meta name="description" content="Acterware Inc.のプライバシーポリシーのページです。">
 
@@ -167,6 +171,23 @@
     <!-- Main Content Section -->
     <main class="flex-grow relative z-10 pt-32 pb-16 lg:pt-40 lg:pb-24">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- パンくずリスト -->
+            <nav aria-label="パンくずリスト" class="mb-6 flex justify-center fade-in-up">
+                <ol class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 text-xs sm:text-sm text-white/90">
+                    <li class="inline-flex items-center">
+                        <a href="index.html" class="hover:text-acter-light transition-colors flex items-center">
+                            <i class="fas fa-home mr-1.5 text-xs"></i>ホーム
+                        </a>
+                    </li>
+                    <li class="inline-flex items-center text-white/50">
+                        <i class="fas fa-chevron-right text-[10px] mx-1"></i>
+                    </li>
+                    <li class="inline-flex items-center text-white font-medium" aria-current="page">
+                        プライバシーポリシー
+                    </li>
+                </ol>
+            </nav>
+
             <div class="glass-card rounded-[2.5rem] p-8 md:p-12 lg:p-16 reveal active border-t-8 border-t-acter-navy">
 
                 <div class="text-center mb-12 border-b border-gray-200 pb-8">
@@ -285,7 +306,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="bg-white p-3 rounded-xl inline-block mb-6 shadow-sm">
-                        <img src="img/Acterware_logo_tran.png" alt="Acterware Logo" class="h-10">
+                        <img src="img/Acterware_logo_tran.png" alt="Acterware Logo" loading="lazy" decoding="async" class="h-10">
                     </div>
                     <p class="text-sm text-gray-200 mb-4 max-w-sm leading-relaxed">
                         共に歩む、事業のサポーター。<br>
@@ -311,10 +332,10 @@
                 <div>
                     <h4 class="text-white font-bold mb-4">Links</h4>
                     <ul class="space-y-3 text-sm text-gray-200">
-                        <li><a href="company.html" target="_blank"
+                        <li><a href="company.html"
                                 class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">会社概要</a>
                         </li>
-                        <li><a href="project.html" target="_blank"
+                        <li><a href="project.html"
                                 class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">プロジェクトギャラリー</a>
                         </li>
                         <li><a href="privacypolicy.html"
@@ -325,10 +346,10 @@
                 <div>
                     <h4 class="text-white font-bold mb-4">Profile</h4>
                     <ul class="space-y-3 text-sm text-gray-200">
-                        <li><a href="portfolio.html" target="_blank"
+                        <li><a href="portfolio.html"
                                 class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Portfolio</a>
                         </li>
-                        <li><a href="work.html" target="_blank"
+                        <li><a href="work.html"
                                 class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">職務経歴</a>
                         </li>
                     </ul>

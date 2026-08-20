@@ -7,6 +7,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <title>アクターウェア | プロジェクトギャラリー</title>
     <meta name="description" content="アクターウェアがこれまでに手掛けたプロジェクトや実績のギャラリーです。ECサイト構築、コンサルティング、システム開発などのソリューションをご紹介します。">
 
@@ -149,6 +153,23 @@
         <section class="relative pt-32 pb-16 lg:pt-40 lg:pb-20 min-h-[40vh] flex items-center z-10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div class="text-center max-w-4xl mx-auto">
+                    <!-- パンくずリスト -->
+                    <nav aria-label="パンくずリスト" class="mb-6 flex justify-center fade-in-up">
+                        <ol class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 text-xs sm:text-sm text-white/90">
+                            <li class="inline-flex items-center">
+                                <a href="index.html" class="hover:text-acter-light transition-colors flex items-center">
+                                    <i class="fas fa-home mr-1.5 text-xs"></i>ホーム
+                                </a>
+                            </li>
+                            <li class="inline-flex items-center text-white/50">
+                                <i class="fas fa-chevron-right text-[10px] mx-1"></i>
+                            </li>
+                            <li class="inline-flex items-center text-white font-medium" aria-current="page">
+                                プロジェクトギャラリー
+                            </li>
+                        </ol>
+                    </nav>
+
                     <span
                         class="inline-block px-4 py-1 rounded-full bg-white/10 border border-white/20 text-white font-bold tracking-widest uppercase mb-6 fade-in-up backdrop-blur-sm">
                         ACTERWARE INC. / PROJECT GALLERY
@@ -199,7 +220,7 @@
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/アクターウェア会社案内.png" alt="アクターウェア会社案内"
+                                <img src="project/アクターウェア会社案内.png" alt="アクターウェア会社案内" loading="lazy" decoding="async"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div class="p-6 flex-1 flex flex-col">
@@ -234,7 +255,7 @@
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/パンフレット.png" alt="アクターウェア社パンフレット"
+                                <img src="project/パンフレット.png" alt="アクターウェア社パンフレット" loading="lazy" decoding="async"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div class="p-6 flex-1 flex flex-col">
@@ -269,7 +290,7 @@
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/corporateprofile.jpg" alt="Acterware Inc. Corporate Profile"
+                                <img src="project/corporateprofile.jpg" alt="Acterware Inc. Corporate Profile" loading="lazy" decoding="async"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div class="p-6 flex-1 flex flex-col">
@@ -305,7 +326,7 @@
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/GeminiWebdesign_s.jpg" alt="ウェブデザイン ～コーポレートサイトデザイン～"
+                                <img src="project/GeminiWebdesign_s.jpg" alt="ウェブデザイン ～コーポレートサイトデザイン～" loading="lazy" decoding="async"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div class="p-6 flex-1 flex flex-col">
@@ -324,7 +345,7 @@
                                     Gemini君、なかなかいい仕事してくれます。
                                 </p>
                                 <div class="mt-auto pt-4 border-t border-gray-100 flex justify-end">
-                                    <a href="./contents/corpdesign.html" target="_blank"
+                                    <a href="./contents/corpdesign.html"
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
@@ -340,7 +361,7 @@
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/世界のAI利用状況 (2024-2025).png" alt="Geminiを使ったGoogleスライドの作成例"
+                                <img src="project/世界のAI利用状況 (2024-2025).png" alt="Geminiを使ったGoogleスライドの作成例" loading="lazy" decoding="async"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div class="p-6 flex-1 flex flex-col">
@@ -375,7 +396,7 @@
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/アクターウェア会社紹介.png" alt="アクターウェア会社紹介資料"
+                                <img src="project/アクターウェア会社紹介.png" alt="アクターウェア会社紹介資料" loading="lazy" decoding="async"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div class="p-6 flex-1 flex flex-col">
@@ -411,7 +432,7 @@
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/プロジェクト管理計画書.png" alt="プロジェクト管理計画書"
+                                <img src="project/プロジェクト管理計画書.png" alt="プロジェクト管理計画書" loading="lazy" decoding="async"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div class="p-6 flex-1 flex flex-col">
@@ -445,7 +466,7 @@
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/MD業務の基本的な流れと役割.png" alt="MD業務の基本的な流れと役割"
+                                <img src="project/MD業務の基本的な流れと役割.png" alt="MD業務の基本的な流れと役割" loading="lazy" decoding="async"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div class="p-6 flex-1 flex flex-col">
@@ -478,7 +499,7 @@
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
                                 <img src="project/Fit to Standardを成功させる標準的な進め方と 実践ステップ7選.png"
-                                    alt="Fit to Standardを成功させる標準的な進め方と 実践ステップ7選"
+                                    alt="Fit to Standardを成功させる標準的な進め方と 実践ステップ7選" loading="lazy" decoding="async"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div class="p-6 flex-1 flex flex-col">
@@ -521,7 +542,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="bg-white p-3 rounded-xl inline-block mb-6 shadow-sm">
-                        <img src="img/Acterware_logo_tran.png" alt="Acterware Logo" class="h-10">
+                        <img src="img/Acterware_logo_tran.png" alt="Acterware Logo" loading="lazy" decoding="async" class="h-10">
                     </div>
                     <p class="text-sm text-gray-200 mb-4 max-w-sm leading-relaxed">
                         共に歩む、事業のサポーター。<br>
@@ -547,12 +568,12 @@
                 <div>
                     <h4 class="text-white font-bold mb-4">Links</h4>
                     <ul class="space-y-3 text-sm text-gray-200">
-                        <li><a href="company.html" target="_blank"
+                        <li><a href="company.html"
                                 class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">会社概要</a>
                         </li>
                         <li><a href="project.html"
                                 class="inline-block text-white font-bold translate-x-2">プロジェクトギャラリー</a></li>
-                        <li><a href="privacypolicy.html" target="_blank"
+                        <li><a href="privacypolicy.html"
                                 class="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">プライバシーポリシー</a>
                         </li>
                     </ul>
