@@ -25,6 +25,7 @@ export default {
     const headers = new Headers(response.headers);
     headers.set("X-Content-Type-Options", "nosniff");
     headers.set("X-Frame-Options", "SAMEORIGIN");
+    headers.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload");
 
     return new Response(response.body, {
       status: response.status,

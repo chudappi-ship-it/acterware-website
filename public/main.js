@@ -81,4 +81,30 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal').forEach((el) => {
         observer.observe(el);
     });
+
+    // FAQ Accordion Toggle
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const answer = toggle.nextElementSibling;
+            const icon = toggle.querySelector('.faq-icon i');
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                answer.classList.add('hidden');
+                toggle.setAttribute('aria-expanded', 'false');
+                if (icon) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            } else {
+                answer.classList.remove('hidden');
+                toggle.setAttribute('aria-expanded', 'true');
+                if (icon) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            }
+        });
+    });
 });

@@ -4,8 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <title>Acterware Inc. | アクターウェア</title>
     <meta name="description" content="アクターウェア社はクライアント企業様に寄り添い、事業全般をサポートいたします。未来の事業に必要な『すべて』を、今、この手で。">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.acterware.com/contents/corpdesign.html">
+
+    <!-- JSON-LD 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.acterware.com/contents/corpdesign.html#webpage",
+          "url": "https://www.acterware.com/contents/corpdesign.html",
+          "name": "ウェブデザイン ～コーポレートサイトデザイン～ | Acterware Inc.",
+          "isPartOf": {
+            "@id": "https://www.acterware.com/#website"
+          },
+          "inLanguage": "ja"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "ホーム",
+              "item": "https://www.acterware.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "プロジェクトギャラリー",
+              "item": "https://www.acterware.com/project.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "コーポレートサイトデザイン",
+              "item": "https://www.acterware.com/contents/corpdesign.html"
+            }
+          ]
+        },
+        {
+          "@type": "Article",
+          "@id": "https://www.acterware.com/contents/corpdesign.html#article",
+          "isPartOf": {
+            "@id": "https://www.acterware.com/contents/corpdesign.html#webpage"
+          },
+          "headline": "Geminiを活用したコーポレートサイトデザイン制作事例",
+          "description": "Acterwareのサイトをもとに、一般的なコーポレートサイトのコンテンツを作成するようにAIに指示し、対話を重ねながらデザインした制作事例です。",
+          "image": "https://www.acterware.com/project/GeminiWebdesign_s.jpg",
+          "datePublished": "2025-10-01T09:00:00+09:00",
+          "dateModified": "2026-08-20T00:00:00+09:00",
+          "mainEntityOfPage": "https://www.acterware.com/contents/corpdesign.html",
+          "author": {
+            "@type": "Person",
+            "name": "津田 剛",
+            "jobTitle": "代表取締役",
+            "url": "https://www.acterware.com/portfolio.html"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://www.acterware.com/#organization",
+            "name": "株式会社アクターウェア",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.acterware.com/img/Acterware_logo_tran.png"
+            }
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="/tailwind.css">
@@ -67,9 +143,10 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="https://www.acterware.com/" class="flex items-center group">
-                        <!-- 【重要】ここに実際のロゴ画像パスを設定してください -->
-                        <!-- 現在はデザイン確認用にダミー画像を表示しています -->
-                        <img src="/img/Acterware_logo_tran.png" alt="Acterware Inc." class="h-16 w-auto">
+                        <picture>
+                            <source srcset="/img/Acterware_logo_tran.webp" type="image/webp">
+                            <img src="/img/Acterware_logo_tran.png" alt="Acterware Inc." class="h-16 w-auto" width="949" height="255">
+                        </picture>
 
                         <!-- ロゴ画像がない場合のテキストフォールバック（ロゴのグラデーションを模倣） -->
                         <!--
@@ -231,17 +308,20 @@
                     <div
                         class="absolute -inset-4 bg-gradient-to-br from-brand-dark to-brand-accent rounded-3xl transform rotate-2 opacity-20 transition-transform duration-500 group-hover:rotate-4">
                     </div>
-                    <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-                        <img src="20251129161057.jpg" alt="Business consultation and teamwork" loading="lazy" decoding="async"
-                            class="w-full object-cover h-[500px] transform transition duration-700 group-hover:scale-105">
+                    <figure class="relative overflow-hidden rounded-2xl shadow-2xl m-0">
+                        <picture>
+                            <source srcset="20251129161057.webp" type="image/webp">
+                            <img src="20251129161057.jpg" alt="Business consultation and teamwork" loading="lazy" decoding="async"
+                                class="w-full object-cover h-[500px] transform transition duration-700 group-hover:scale-105" width="800" height="800">
+                        </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent opacity-80">
                         </div>
-                        <div class="absolute bottom-8 left-8 text-white">
+                        <figcaption class="absolute bottom-8 left-8 text-white">
                             <div class="w-12 h-1 bg-brand-accent mb-4"></div>
                             <p class="font-bold text-2xl mb-1">Partnership</p>
                             <p class="text-sm opacity-90 font-light">クライアントと共に創る未来</p>
-                        </div>
-                    </div>
+                        </figcaption>
+                    </figure>
                 </div>
 
                 <div class="order-1 lg:order-2 space-y-8">

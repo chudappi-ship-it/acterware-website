@@ -16,6 +16,7 @@
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <title>株式会社アクターウェア - 共に歩む、事業のサポーター | IT・経営コンサルティング</title>
     <meta name="description" content="未来の事業に必要な『すべて』を、今、この手で。株式会社アクターウェアは、ITシステム構築・PM支援から新規SaaS立ち上げ、経理・経営視点での業務改善コンサルティングまで、お客様の事業成長を一気通貫で強力にサポートします。">
+    <meta name="keywords" content="ITコンサルティング, 経営コンサルティング, PM支援, プロジェクトマネジメント, システム開発, SaaS立ち上げ, 業務改善, 経理コンサルティング, アクターウェア, Acterware, 津田剛">
 
     <!-- CDN Preconnect / DNS Prefetch for Core Web Vitals Optimization -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -119,6 +120,55 @@
             "@id": "https://www.acterware.com/#organization"
           },
           "inLanguage": "ja"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.acterware.com/#faq",
+          "isPartOf": {
+            "@id": "https://www.acterware.com/#website"
+          },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "どのような業界・規模の企業に対応していますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "スタートアップ・中小企業から大手エンタープライズまで、小売・流通・製造・サービス・ITなど幅広い業界のクライアント様を支援しています。新規事業の立ち上げから既存システムの刷新・業務効率化まで柔軟に対応可能です。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "システム開発だけでなく、要件定義やプロジェクトマネジメント（PM）のみの依頼も可能ですか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "はい、可能です。大規模プロジェクトのPM・PMO支援や要件定義、ベンダーコントロールなど、マネジメント領域に特化したご支援も多数の実績がございます。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "支援の契約形態や期間はどのようになりますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "プロジェクト単位の受託開発・スポットコンサルティングから、月額定額制（準委任・顧問契約）による伴走型支援まで、お客様のニーズや事業フェーズに合わせて最適な形態をご提案いたします。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "業務改善や経理・経営視点でのIT化相談は可能ですか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "はい。代表の経理・経営管理バックグラウンドと開発現場経験を活かし、単なる技術導入にとどまらず、コスト対効果や業務フロー全体を最適化するご提案を強みとしています。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "相談からプロジェクト開始までの流れを教えてください。",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "お問い合わせフォームよりご連絡いただいた後、オンラインまたは対面にて初回ヒアリング（無料）を実施します。その後、課題に合わせたご提案書・お見積もりを提示し、合意後に契約締結・キックオフとなります。"
+              }
+            }
+          ]
         }
       ]
     }
@@ -154,7 +204,10 @@
                 <div class="flex-shrink-0 flex items-center">
                     <a href="index.html" class="flex items-center space-x-3 group">
                         <!-- ロゴに黒・ネイビー文字が含まれるため、Nav背景は白系を維持 -->
-                        <img class="h-12 w-auto" src="img/Acterware_logo_tran.png" alt="Acterware Logo">
+                        <picture>
+                            <source srcset="img/Acterware_logo_tran.webp" type="image/webp">
+                            <img class="h-12 w-auto" src="img/Acterware_logo_tran.png" alt="Acterware Logo" width="949" height="255">
+                        </picture>
                     </a>
                 </div>
 
@@ -168,6 +221,8 @@
                         class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">サービス</a>
                     <a href="#works"
                         class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">実績</a>
+                    <a href="#faq"
+                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">よくある質問</a>
                     <a href="#contact"
                         class="bg-gradient-brand text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                         無料相談はこちら
@@ -195,6 +250,8 @@
                     class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">サービス</a>
                 <a href="#works"
                     class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">実績</a>
+                <a href="#faq"
+                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">よくある質問</a>
                 <a href="#contact"
                     class="block mt-4 mx-4 bg-gradient-brand text-white px-6 py-3 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                     無料相談はこちら
@@ -590,6 +647,104 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 md:py-24 relative z-10">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card rounded-[2.5rem] p-8 md:p-12 lg:p-16 reveal border-t-8 border-t-acter-navy">
+                    <div class="text-center mb-12">
+                        <span class="text-acter-blue font-bold tracking-wider uppercase text-sm mb-2 block">FAQ</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-acter-navy mb-4">よくあるご質問</h2>
+                        <div class="w-16 h-1 bg-gradient-brand mx-auto rounded-full mb-6"></div>
+                        <p class="text-gray-700 font-medium max-w-2xl mx-auto">
+                            サービスのご利用やご相談に関して、お客様から多く寄せられるご質問にお答えします。
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item bg-white/80 rounded-2xl border border-gray-100/80 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                            <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none cursor-pointer" aria-expanded="false">
+                                <span class="font-bold text-gray-800 text-base md:text-lg flex items-center">
+                                    <span class="w-8 h-8 rounded-full bg-acter-blue/10 text-acter-blue font-bold flex items-center justify-center mr-3 text-sm flex-shrink-0">Q</span>
+                                    どのような業界・規模の企業に対応していますか？
+                                </span>
+                                <span class="faq-icon text-acter-blue transition-transform duration-300 ml-4 flex-shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100/60 pl-6 md:pl-17">
+                                スタートアップ・中小企業から大手エンタープライズまで、小売・流通・製造・サービス・ITなど幅広い業界のクライアント様を支援しています。新規事業の立ち上げから既存システムの刷新・業務効率化まで柔軟に対応可能です。
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item bg-white/80 rounded-2xl border border-gray-100/80 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                            <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none cursor-pointer" aria-expanded="false">
+                                <span class="font-bold text-gray-800 text-base md:text-lg flex items-center">
+                                    <span class="w-8 h-8 rounded-full bg-acter-blue/10 text-acter-blue font-bold flex items-center justify-center mr-3 text-sm flex-shrink-0">Q</span>
+                                    システム開発だけでなく、要件定義やプロジェクトマネジメント（PM）のみの依頼も可能ですか？
+                                </span>
+                                <span class="faq-icon text-acter-blue transition-transform duration-300 ml-4 flex-shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100/60 pl-6 md:pl-17">
+                                はい、可能です。大規模プロジェクトのPM・PMO支援や要件定義、ベンダーコントロールなど、マネジメント領域に特化したご支援も多数の実績がございます。
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item bg-white/80 rounded-2xl border border-gray-100/80 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                            <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none cursor-pointer" aria-expanded="false">
+                                <span class="font-bold text-gray-800 text-base md:text-lg flex items-center">
+                                    <span class="w-8 h-8 rounded-full bg-acter-blue/10 text-acter-blue font-bold flex items-center justify-center mr-3 text-sm flex-shrink-0">Q</span>
+                                    支援の契約形態や期間はどのようになりますか？
+                                </span>
+                                <span class="faq-icon text-acter-blue transition-transform duration-300 ml-4 flex-shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100/60 pl-6 md:pl-17">
+                                プロジェクト単位の受託開発・スポットコンサルティングから、月額定額制（準委任・顧問契約）による伴走型支援まで、お客様のニーズや事業フェーズに合わせて最適な形態をご提案いたします。
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item bg-white/80 rounded-2xl border border-gray-100/80 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                            <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none cursor-pointer" aria-expanded="false">
+                                <span class="font-bold text-gray-800 text-base md:text-lg flex items-center">
+                                    <span class="w-8 h-8 rounded-full bg-acter-blue/10 text-acter-blue font-bold flex items-center justify-center mr-3 text-sm flex-shrink-0">Q</span>
+                                    業務改善や経理・経営視点でのIT化相談は可能ですか？
+                                </span>
+                                <span class="faq-icon text-acter-blue transition-transform duration-300 ml-4 flex-shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100/60 pl-6 md:pl-17">
+                                はい。代表の経理・経営管理バックグラウンドと開発現場経験を活かし、単なる技術導入にとどまらず、コスト対効果や業務フロー全体を最適化するご提案を強みとしています。
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item bg-white/80 rounded-2xl border border-gray-100/80 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                            <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none cursor-pointer" aria-expanded="false">
+                                <span class="font-bold text-gray-800 text-base md:text-lg flex items-center">
+                                    <span class="w-8 h-8 rounded-full bg-acter-blue/10 text-acter-blue font-bold flex items-center justify-center mr-3 text-sm flex-shrink-0">Q</span>
+                                    相談からプロジェクト開始までの流れを教えてください。
+                                </span>
+                                <span class="faq-icon text-acter-blue transition-transform duration-300 ml-4 flex-shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100/60 pl-6 md:pl-17">
+                                お問い合わせフォームよりご連絡いただいた後、オンラインまたは対面にて初回ヒアリング（無料）を実施します。その後、課題に合わせたご提案書・お見積もりを提示し、合意後に契約締結・キックオフとなります。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="py-16 md:py-24 relative z-10">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -708,7 +863,10 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="bg-white p-3 rounded-xl inline-block mb-6 shadow-sm">
-                        <img src="img/Acterware_logo_tran.png" alt="Acterware Logo" loading="lazy" decoding="async" class="h-10">
+                        <picture>
+                            <source srcset="img/Acterware_logo_tran.webp" type="image/webp">
+                            <img src="img/Acterware_logo_tran.png" alt="Acterware Logo" loading="lazy" decoding="async" class="h-10 w-auto" width="949" height="255">
+                        </picture>
                     </div>
                     <p class="text-sm text-gray-200 mb-4 max-w-sm leading-relaxed">
                         共に歩む、事業のサポーター。<br>

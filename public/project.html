@@ -13,6 +13,7 @@
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <title>アクターウェア | プロジェクトギャラリー</title>
     <meta name="description" content="アクターウェアがこれまでに手掛けたプロジェクトや実績のギャラリーです。ECサイト構築、コンサルティング、システム開発などのソリューションをご紹介します。">
+    <meta name="keywords" content="プロジェクトギャラリー, 制作事例, 開発実績, ECサイト構築, コーポレートサイトデザイン, AI活用, プロジェクト管理計画書, 業務改善, アクターウェア">
 
     <!-- CDN Preconnect / DNS Prefetch for Core Web Vitals Optimization -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -67,6 +68,34 @@
               "item": "https://www.acterware.com/project.html"
             }
           ]
+        },
+        {
+          "@type": "Article",
+          "@id": "https://www.acterware.com/project.html#article",
+          "isPartOf": {
+            "@id": "https://www.acterware.com/project.html#webpage"
+          },
+          "headline": "株式会社アクターウェア プロジェクトギャラリー・開発実績",
+          "description": "アクターウェアがこれまでに手掛けたプロジェクトや実績のギャラリーです。ECサイト構築、コンサルティング、システム開発などのソリューションをご紹介します。",
+          "image": "https://www.acterware.com/img/Acterware_logo_tran.png",
+          "datePublished": "2025-10-01T09:00:00+09:00",
+          "dateModified": "2026-08-20T00:00:00+09:00",
+          "mainEntityOfPage": "https://www.acterware.com/project.html",
+          "author": {
+            "@type": "Person",
+            "name": "津田 剛",
+            "jobTitle": "代表取締役",
+            "url": "https://www.acterware.com/portfolio.html"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://www.acterware.com/#organization",
+            "name": "株式会社アクターウェア",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.acterware.com/img/Acterware_logo_tran.png"
+            }
+          }
         }
       ]
     }
@@ -98,7 +127,10 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="index.html" class="flex items-center">
-                        <img class="h-12 w-auto" src="img/Acterware_logo_tran.png" alt="Acterware Logo">
+                        <picture>
+                            <source srcset="img/Acterware_logo_tran.webp" type="image/webp">
+                            <img class="h-12 w-auto" src="img/Acterware_logo_tran.png" alt="Acterware Logo" width="949" height="255">
+                        </picture>
                     </a>
                 </div>
 
@@ -112,6 +144,8 @@
                         class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">サービス</a>
                     <a href="index.html#works"
                         class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">実績</a>
+                    <a href="index.html#faq"
+                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">よくある質問</a>
                     <a href="index.html#contact"
                         class="bg-gradient-brand text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                         無料相談はこちら
@@ -139,6 +173,8 @@
                     class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">サービス</a>
                 <a href="index.html#works"
                     class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">実績</a>
+                <a href="index.html#faq"
+                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">よくある質問</a>
                 <a href="index.html#contact"
                     class="block mt-4 mx-4 bg-gradient-brand text-white px-6 py-3 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                     無料相談はこちら
@@ -212,18 +248,21 @@
                     <!-- プロジェクト一覧グリッド (3列から2列に変更) -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
                         <!-- Project Card 1 -->
-                        <div data-categories="資料作成,AI活用"
-                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer">
+                        <figure data-categories="資料作成,AI活用"
+                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer m-0">
                             <div
                                 class="aspect-video w-full bg-gray-200 relative overflow-hidden flex items-center justify-center">
                                 <div
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/アクターウェア会社案内.png" alt="アクターウェア会社案内" loading="lazy" decoding="async"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <picture>
+                                    <source srcset="project/アクターウェア会社案内.webp" type="image/webp">
+                                    <img src="project/アクターウェア会社案内.png" alt="アクターウェア会社案内" loading="lazy" decoding="async"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="1092" height="614">
+                                </picture>
                             </div>
-                            <div class="p-6 flex-1 flex flex-col">
+                            <figcaption class="p-6 flex-1 flex flex-col">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     <span
                                         class="text-[10px] font-bold px-2 py-1 bg-orange-100 text-orange-700 rounded-md border border-orange-200">資料作成</span>
@@ -243,22 +282,25 @@
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
 
                         <!-- Project Card 3 -->
-                        <div data-categories="資料作成,AI活用"
-                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer">
+                        <figure data-categories="資料作成,AI活用"
+                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer m-0">
                             <div
                                 class="aspect-video w-full bg-gray-200 relative overflow-hidden flex items-center justify-center">
                                 <div
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/パンフレット.png" alt="アクターウェア社パンフレット" loading="lazy" decoding="async"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <picture>
+                                    <source srcset="project/パンフレット.webp" type="image/webp">
+                                    <img src="project/パンフレット.png" alt="アクターウェア社パンフレット" loading="lazy" decoding="async"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="1728" height="956">
+                                </picture>
                             </div>
-                            <div class="p-6 flex-1 flex flex-col">
+                            <figcaption class="p-6 flex-1 flex flex-col">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     <span
                                         class="text-[10px] font-bold px-2 py-1 bg-orange-100 text-orange-700 rounded-md border border-orange-200">資料作成</span>
@@ -278,22 +320,25 @@
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
 
                         <!-- Project Card 1 -->
-                        <div data-categories="資料作成,AI活用"
-                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer">
+                        <figure data-categories="資料作成,AI活用"
+                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer m-0">
                             <div
                                 class="aspect-video w-full bg-gray-200 relative overflow-hidden flex items-center justify-center">
                                 <div
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/corporateprofile.jpg" alt="Acterware Inc. Corporate Profile" loading="lazy" decoding="async"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <picture>
+                                    <source srcset="project/corporateprofile.webp" type="image/webp">
+                                    <img src="project/corporateprofile.jpg" alt="Acterware Inc. Corporate Profile" loading="lazy" decoding="async"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="2487" height="1394">
+                                </picture>
                             </div>
-                            <div class="p-6 flex-1 flex flex-col">
+                            <figcaption class="p-6 flex-1 flex flex-col">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     <span
                                         class="text-[10px] font-bold px-2 py-1 bg-orange-100 text-orange-700 rounded-md border border-orange-200">資料作成</span>
@@ -314,22 +359,25 @@
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
 
                         <!-- Project Card 2 -->
-                        <div data-categories="ウェブデザイン,AI活用"
-                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer">
+                        <figure data-categories="ウェブデザイン,AI活用"
+                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer m-0">
                             <div
                                 class="aspect-video w-full bg-gray-200 relative overflow-hidden flex items-center justify-center">
                                 <div
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/GeminiWebdesign_s.jpg" alt="ウェブデザイン ～コーポレートサイトデザイン～" loading="lazy" decoding="async"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <picture>
+                                    <source srcset="project/GeminiWebdesign_s.webp" type="image/webp">
+                                    <img src="project/GeminiWebdesign_s.jpg" alt="ウェブデザイン ～コーポレートサイトデザイン～" loading="lazy" decoding="async"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="1724" height="1013">
+                                </picture>
                             </div>
-                            <div class="p-6 flex-1 flex flex-col">
+                            <figcaption class="p-6 flex-1 flex flex-col">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     <span
                                         class="text-[10px] font-bold px-2 py-1 bg-purple-100 text-purple-700 rounded-md border border-purple-200">ウェブデザイン</span>
@@ -349,22 +397,25 @@
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
 
                         <!-- Project Card 3 -->
-                        <div data-categories="資料作成,AI活用"
-                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer">
+                        <figure data-categories="資料作成,AI活用"
+                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer m-0">
                             <div
                                 class="aspect-video w-full bg-gray-200 relative overflow-hidden flex items-center justify-center">
                                 <div
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/世界のAI利用状況 (2024-2025).png" alt="Geminiを使ったGoogleスライドの作成例" loading="lazy" decoding="async"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <picture>
+                                    <source srcset="project/世界のAI利用状況 (2024-2025).webp" type="image/webp">
+                                    <img src="project/世界のAI利用状況 (2024-2025).png" alt="Geminiを使ったGoogleスライドの作成例" loading="lazy" decoding="async"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="1280" height="720">
+                                </picture>
                             </div>
-                            <div class="p-6 flex-1 flex flex-col">
+                            <figcaption class="p-6 flex-1 flex flex-col">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     <span
                                         class="text-[10px] font-bold px-2 py-1 bg-orange-100 text-orange-700 rounded-md border border-orange-200">資料作成</span>
@@ -384,22 +435,25 @@
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
 
                         <!-- Project Card 4 -->
-                        <div data-categories="資料作成,AI活用"
-                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer">
+                        <figure data-categories="資料作成,AI活用"
+                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer m-0">
                             <div
                                 class="aspect-video w-full bg-gray-200 relative overflow-hidden flex items-center justify-center">
                                 <div
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/アクターウェア会社紹介.png" alt="アクターウェア会社紹介資料" loading="lazy" decoding="async"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <picture>
+                                    <source srcset="project/アクターウェア会社紹介.webp" type="image/webp">
+                                    <img src="project/アクターウェア会社紹介.png" alt="アクターウェア会社紹介資料" loading="lazy" decoding="async"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="960" height="540">
+                                </picture>
                             </div>
-                            <div class="p-6 flex-1 flex flex-col">
+                            <figcaption class="p-6 flex-1 flex flex-col">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     <span
                                         class="text-[10px] font-bold px-2 py-1 bg-orange-100 text-orange-700 rounded-md border border-orange-200">資料作成</span>
@@ -420,22 +474,25 @@
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
 
                         <!-- Project Card 6 -->
-                        <div data-categories="資料作成,コンサル / PMO"
-                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer">
+                        <figure data-categories="資料作成,コンサル / PMO"
+                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer m-0">
                             <div
                                 class="aspect-video w-full bg-gray-200 relative overflow-hidden flex items-center justify-center">
                                 <div
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/プロジェクト管理計画書.png" alt="プロジェクト管理計画書" loading="lazy" decoding="async"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <picture>
+                                    <source srcset="project/プロジェクト管理計画書.webp" type="image/webp">
+                                    <img src="project/プロジェクト管理計画書.png" alt="プロジェクト管理計画書" loading="lazy" decoding="async"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="1536" height="864">
+                                </picture>
                             </div>
-                            <div class="p-6 flex-1 flex flex-col">
+                            <figcaption class="p-6 flex-1 flex flex-col">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     <span
                                         class="text-[10px] font-bold px-2 py-1 bg-orange-100 text-orange-700 rounded-md border border-orange-200">資料作成</span>
@@ -454,22 +511,25 @@
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
 
                         <!-- Project Card 7 -->
-                        <div data-categories="資料作成"
-                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer">
+                        <figure data-categories="資料作成"
+                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer m-0">
                             <div
                                 class="aspect-video w-full bg-gray-200 relative overflow-hidden flex items-center justify-center">
                                 <div
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/MD業務の基本的な流れと役割.png" alt="MD業務の基本的な流れと役割" loading="lazy" decoding="async"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <picture>
+                                    <source srcset="project/MD業務の基本的な流れと役割.webp" type="image/webp">
+                                    <img src="project/MD業務の基本的な流れと役割.png" alt="MD業務の基本的な流れと役割" loading="lazy" decoding="async"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="1536" height="864">
+                                </picture>
                             </div>
-                            <div class="p-6 flex-1 flex flex-col">
+                            <figcaption class="p-6 flex-1 flex flex-col">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     <span
                                         class="text-[10px] font-bold px-2 py-1 bg-orange-100 text-orange-700 rounded-md border border-orange-200">資料作成</span>
@@ -486,23 +546,26 @@
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
 
                         <!-- Project Card 8 -->
-                        <div data-categories="資料作成,コンサル / PMO"
-                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer">
+                        <figure data-categories="資料作成,コンサル / PMO"
+                            class="project-card bg-white/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col cursor-pointer m-0">
                             <div
                                 class="aspect-video w-full bg-gray-200 relative overflow-hidden flex items-center justify-center">
                                 <div
                                     class="absolute inset-0 bg-gradient-brand opacity-5 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none z-10">
                                 </div>
                                 <!-- 画像ファイルを指定してください -->
-                                <img src="project/Fit to Standardを成功させる標準的な進め方と 実践ステップ7選.png"
-                                    alt="Fit to Standardを成功させる標準的な進め方と 実践ステップ7選" loading="lazy" decoding="async"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <picture>
+                                    <source srcset="project/Fit to Standardを成功させる標準的な進め方と 実践ステップ7選.webp" type="image/webp">
+                                    <img src="project/Fit to Standardを成功させる標準的な進め方と 実践ステップ7選.png"
+                                        alt="Fit to Standardを成功させる標準的な進め方と 実践ステップ7選" loading="lazy" decoding="async"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="1536" height="864">
+                                </picture>
                             </div>
-                            <div class="p-6 flex-1 flex flex-col">
+                            <figcaption class="p-6 flex-1 flex flex-col">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     <span
                                         class="text-[10px] font-bold px-2 py-1 bg-orange-100 text-orange-700 rounded-md border border-orange-200">資料作成</span>
@@ -524,8 +587,8 @@
                                         class="text-acter-blue text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">詳細をみる
                                         <i class="fas fa-arrow-right ml-1"></i></a>
                                 </div>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
 
                     </div>
 
@@ -542,7 +605,10 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="bg-white p-3 rounded-xl inline-block mb-6 shadow-sm">
-                        <img src="img/Acterware_logo_tran.png" alt="Acterware Logo" loading="lazy" decoding="async" class="h-10">
+                        <picture>
+                            <source srcset="img/Acterware_logo_tran.webp" type="image/webp">
+                            <img src="img/Acterware_logo_tran.png" alt="Acterware Logo" loading="lazy" decoding="async" class="h-10 w-auto" width="949" height="255">
+                        </picture>
                     </div>
                     <p class="text-sm text-gray-200 mb-4 max-w-sm leading-relaxed">
                         共に歩む、事業のサポーター。<br>
