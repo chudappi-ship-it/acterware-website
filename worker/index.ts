@@ -18,13 +18,15 @@ export default {
       // /api/contact → contact.ts に処理を委譲
       response = await handleContactRequest(request, env);
     } else {
-      response = new Response("Not Found", { status: 404 });
+      // 静的アセット（HTML, CSS, JS, 画像等）を ASSETS から取得
+      response = await env.ASSETS.fetch(request);
     }
 
-    // セキュリティヘッダーの付与
+    // 全レスポンス（APIおよび静的アセット）にセキュリティヘッダーを一括付与
     const headers = new Headers(response.headers);
     headers.set("X-Content-Type-Options", "nosniff");
     headers.set("X-Frame-Options", "SAMEORIGIN");
+    headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
     headers.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload");
 
     return new Response(response.body, {
