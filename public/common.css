@@ -111,3 +111,16 @@
 .footer-gradient {
     background: linear-gradient(to bottom, #1A3668, #0B1426);
 }
+
+/* プラン専用の単色縦方向ダークグラデーション */
+.plan-gradient-blue {
+    background: linear-gradient(to bottom, #1E56A0, #0E2A54);
+}
+
+.plan-gradient-navy {
+    background: linear-gradient(to bottom, #1A3668, #0B1426);
+}
+
+.plan-gradient-green {
+    background: linear-gradient(to bottom, #136054, #082E28);
+}

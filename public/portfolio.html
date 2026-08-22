@@ -132,17 +132,77 @@
                 </div>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html#about"
-                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">私たちについて</a>
-                    <a href="index.html#why-us"
-                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">選ばれる理由</a>
-                    <a href="index.html#services"
-                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">サービス</a>
-                    <a href="index.html#works"
-                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">実績</a>
-                    <a href="index.html#faq"
-                        class="text-gray-700 hover:text-acter-navy font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">よくある質問</a>
+                <div class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-gray-700 hover:text-acter-navy font-bold transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-acter-navy after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">Home</a>
+
+                    <!-- Services Dropdown -->
+                    <div class="relative group py-4">
+                        <button class="text-gray-700 group-hover:text-acter-navy font-bold transition-colors flex items-center focus:outline-none">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down ml-1.5 text-xs transition-transform duration-300 group-hover:rotate-180 text-acter-blue"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-gray-100 py-3 px-2 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+                            <a href="strategist.html" class="block px-3 py-2 text-sm font-bold text-acter-navy hover:bg-acter-light/60 rounded-xl transition-colors">
+                                ITストラテジスト TOP
+                            </a>
+                            <div class="my-1 border-t border-gray-100"></div>
+                            <a href="strategist.html#challenges" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy hover:bg-gray-50 rounded-lg transition-colors">
+                                ・こんなお悩み
+                            </a>
+                            <a href="strategist.html#values" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy hover:bg-gray-50 rounded-lg transition-colors">
+                                ・4つの提供価値
+                            </a>
+                            <a href="strategist.html#plans" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy hover:bg-gray-50 rounded-lg transition-colors">
+                                ・提供プラン・料金
+                            </a>
+                            <a href="strategist.html#profile" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy hover:bg-gray-50 rounded-lg transition-colors">
+                                ・担当ストラテジスト
+                            </a>
+                            <a href="strategist.html#flow" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy hover:bg-gray-50 rounded-lg transition-colors">
+                                ・サービス開始までの流れ
+                            </a>
+                            <a href="strategist.html#faq" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy hover:bg-gray-50 rounded-lg transition-colors">
+                                ・よくある質問
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Links Dropdown -->
+                    <div class="relative group py-4">
+                        <button class="text-gray-700 group-hover:text-acter-navy font-bold transition-colors flex items-center focus:outline-none">
+                            <span>Links</span>
+                            <i class="fas fa-chevron-down ml-1.5 text-xs transition-transform duration-300 group-hover:rotate-180 text-acter-blue"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-56 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-gray-100 py-2 px-2 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+                            <a href="company.html" class="block px-3 py-2 text-sm text-gray-700 hover:text-acter-navy hover:bg-gray-50 rounded-xl transition-colors font-medium">
+                                会社概要
+                            </a>
+                            <a href="project.html" class="block px-3 py-2 text-sm text-gray-700 hover:text-acter-navy hover:bg-gray-50 rounded-xl transition-colors font-medium">
+                                プロジェクトギャラリー
+                            </a>
+                            <a href="privacypolicy.html" class="block px-3 py-2 text-sm text-gray-700 hover:text-acter-navy hover:bg-gray-50 rounded-xl transition-colors font-medium">
+                                プライバシーポリシー
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Profile Dropdown -->
+                    <div class="relative group py-4">
+                        <button class="text-acter-navy font-bold transition-colors flex items-center focus:outline-none">
+                            <span>Profile</span>
+                            <i class="fas fa-chevron-down ml-1.5 text-xs transition-transform duration-300 group-hover:rotate-180 text-acter-blue"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-48 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-gray-100 py-2 px-2 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+                            <a href="portfolio.html" class="block px-3 py-2 text-sm text-acter-navy bg-acter-light/50 rounded-xl transition-colors font-bold">
+                                Portfolio
+                            </a>
+                            <a href="work.html" class="block px-3 py-2 text-sm text-gray-700 hover:text-acter-navy hover:bg-gray-50 rounded-xl transition-colors font-medium">
+                                職務経歴
+                            </a>
+                        </div>
+                    </div>
+
                     <a href="index.html#contact"
                         class="bg-gradient-brand text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                         無料相談はこちら
@@ -151,7 +211,7 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-acter-navy focus:outline-none p-2">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-acter-navy focus:outline-none p-2" aria-label="メニューを開く">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -160,22 +220,50 @@
 
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu"
-            class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-lg absolute w-full">
-            <div class="px-4 pt-2 pb-6 space-y-1 text-center">
-                <a href="index.html#about"
-                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">私たちについて</a>
-                <a href="index.html#why-us"
-                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">選ばれる理由</a>
-                <a href="index.html#services"
-                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">サービス</a>
-                <a href="index.html#works"
-                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">実績</a>
-                <a href="index.html#faq"
-                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-acter-navy hover:bg-gray-100 hover:translate-x-2 transition-all duration-300 rounded-md">よくある質問</a>
-                <a href="index.html#contact"
-                    class="block mt-4 mx-4 bg-gradient-brand text-white px-6 py-3 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    無料相談はこちら
-                </a>
+            class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-lg absolute w-full max-h-[85vh] overflow-y-auto">
+            <div class="px-4 pt-3 pb-6 space-y-3">
+                <a href="index.html"
+                    class="block px-3 py-2 text-base font-bold text-gray-800 hover:text-acter-navy hover:bg-gray-100 rounded-md">Home</a>
+
+                <!-- Services Mobile -->
+                <div class="border-t border-gray-100 pt-2">
+                    <span class="block px-3 py-1 text-xs font-bold uppercase tracking-wider text-acter-blue">Services</span>
+                    <div class="mt-1 space-y-1 pl-2">
+                        <a href="strategist.html" class="block px-3 py-2 text-sm font-bold text-acter-navy hover:bg-acter-light/50 rounded-md">ITストラテジスト TOP</a>
+                        <a href="strategist.html#challenges" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy rounded-md">・こんなお悩み</a>
+                        <a href="strategist.html#values" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy rounded-md">・4つの提供価値</a>
+                        <a href="strategist.html#plans" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy rounded-md">・提供プラン・料金</a>
+                        <a href="strategist.html#profile" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy rounded-md">・担当ストラテジスト</a>
+                        <a href="strategist.html#flow" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy rounded-md">・サービス開始までの流れ</a>
+                        <a href="strategist.html#faq" class="block px-3 py-1.5 text-xs text-gray-600 hover:text-acter-navy rounded-md">・よくある質問</a>
+                    </div>
+                </div>
+
+                <!-- Links Mobile -->
+                <div class="border-t border-gray-100 pt-2">
+                    <span class="block px-3 py-1 text-xs font-bold uppercase tracking-wider text-acter-blue">Links</span>
+                    <div class="mt-1 space-y-1 pl-2">
+                        <a href="company.html" class="block px-3 py-1.5 text-sm text-gray-700 hover:text-acter-navy rounded-md">会社概要</a>
+                        <a href="project.html" class="block px-3 py-1.5 text-sm text-gray-700 hover:text-acter-navy rounded-md">プロジェクトギャラリー</a>
+                        <a href="privacypolicy.html" class="block px-3 py-1.5 text-sm text-gray-700 hover:text-acter-navy rounded-md">プライバシーポリシー</a>
+                    </div>
+                </div>
+
+                <!-- Profile Mobile -->
+                <div class="border-t border-gray-100 pt-2">
+                    <span class="block px-3 py-1 text-xs font-bold uppercase tracking-wider text-acter-blue">Profile</span>
+                    <div class="mt-1 space-y-1 pl-2">
+                        <a href="portfolio.html" class="block px-3 py-1.5 text-sm font-bold text-acter-navy bg-acter-light/50 rounded-md">Portfolio</a>
+                        <a href="work.html" class="block px-3 py-1.5 text-sm text-gray-700 hover:text-acter-navy rounded-md">職務経歴</a>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <a href="index.html#contact"
+                        class="block text-center bg-gradient-brand text-white px-6 py-3 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        無料相談はこちら
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -505,8 +593,8 @@
     <!-- Footer -->
     <footer class="footer-gradient text-gray-100 py-12 relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div class="col-span-1 md:col-span-2">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mb-8">
+                <div class="col-span-1 sm:col-span-2 md:col-span-2">
                     <div class="bg-white p-3 rounded-xl inline-block mb-6 shadow-sm">
                         <picture>
                             <source srcset="img/Acterware_logo_tran.webp" type="image/webp">
@@ -532,6 +620,33 @@
                             <i class="fas fa-pen-nib text-lg"></i>
                         </a>
                     </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-200">
+                        <li><a href="strategist.html"
+                                class="inline-block text-acter-light font-bold hover:text-white hover:translate-x-2 transition-all duration-300">ITストラテジスト TOP</a>
+                        </li>
+                        <li><a href="strategist.html#challenges"
+                                class="inline-block text-xs text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300">・こんなお悩み</a>
+                        </li>
+                        <li><a href="strategist.html#values"
+                                class="inline-block text-xs text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300">・4つの提供価値</a>
+                        </li>
+                        <li><a href="strategist.html#plans"
+                                class="inline-block text-xs text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300">・提供プラン・料金</a>
+                        </li>
+                        <li><a href="strategist.html#profile"
+                                class="inline-block text-xs text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300">・担当ストラテジスト</a>
+                        </li>
+                        <li><a href="strategist.html#flow"
+                                class="inline-block text-xs text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300">・サービス開始までの流れ</a>
+                        </li>
+                        <li><a href="strategist.html#faq"
+                                class="inline-block text-xs text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300">・よくある質問</a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div>
