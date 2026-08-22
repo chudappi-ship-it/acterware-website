@@ -74,7 +74,7 @@ export default async function handleContactRequest(request: Request, env: Env): 
         const privacyAgreement = params.privacy ? "同意する" : "未同意";
 
         const categoryMap: Record<string, string> = {
-            "strategist": "ITストラテジスト サービスについて",
+            "tactics": "ITタクティクス サービスについて",
             "system": "システム構築・PM支援について",
             "saas": "新規事業・SaaS立ち上げについて",
             "consulting": "業務改善・経営コンサルティングについて",
